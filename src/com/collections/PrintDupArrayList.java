@@ -13,6 +13,8 @@ public class PrintDupArrayList {
 		for (Integer in : arr) {
 
 			l.add(in);
+			
+			
 
 			
 			
