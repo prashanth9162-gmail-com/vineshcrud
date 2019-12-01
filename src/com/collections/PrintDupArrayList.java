@@ -8,7 +8,8 @@ import java.util.stream.Collectors;
 public class PrintDupArrayList {
 	
 	public static void main(String[] args) {
-		
+		int[] arr = {1,5,7,8,9,5,1,8};
+		removeDuplicates(arr);
 		ArrayList<String> s1 = new ArrayList<>();
 		
 		s1.add("prashanth");
@@ -20,7 +21,7 @@ public class PrintDupArrayList {
 		
 		for (String str : s1) {
 			if (hs.add(str)==true) {
-				System.out.println(str);
+				//System.out.println(str);
 			}
 			
 		}
@@ -32,9 +33,9 @@ public class PrintDupArrayList {
 		n1.add(13);
 		n1.add(13);
 		
-		System.out.println(n1);
+		//System.out.println(n1);
 		
-		n1.stream().collect(Collectors.toSet()).forEach(t-> System.out.println(t));
+		//n1.stream().collect(Collectors.toSet()).forEach(t-> System.out.println(t));
 		
 		/*HashSet<Integer> hs1=new HashSet<>();
 		
@@ -44,6 +45,18 @@ public class PrintDupArrayList {
 			
 		}*/
 		
+	}
+
+	private static void removeDuplicates(int[] arr) {
+		// TODO Auto-generated method stub
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		for (Integer integer : arr) {
+			list.add(integer);
+		}
+		HashSet<Integer> set = new HashSet<>(list);
+		for (Integer integer : set) {
+			System.out.println(integer);
+		}
 	}
 
 }
