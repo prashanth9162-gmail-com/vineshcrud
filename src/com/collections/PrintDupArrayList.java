@@ -14,6 +14,8 @@ public class PrintDupArrayList {
 
 			l.add(in);
 
+			
+			
 		}
 		System.out.println(l);
 
